@@ -1,0 +1,134 @@
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // height: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  height: 8rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 0rem 2rem rgba(29, 29, 29, 0.2);
+  &__logo {
+    &--link {
+      font-family: "Work Sans", sans-serif;
+      font-size: 1.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #444;
+    }
+  }
+  &__search {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      height: 1.8rem;
+      width: 1.8rem;
+      stroke: #666;
+      z-index: 2;
+      transform: translate(-1.2rem);
+    }
+    &--input {
+      font-family: inherit;
+      font-size: 1.4rem;
+      color: inherit;
+      border: none;
+      border-radius: 10rem;
+      padding: 0.8rem 3.5rem;
+      width: 70%;
+      background-color: #f0eeee;
+      transition: all 0.6s;
+      margin-left: -4.25rem;
+      margin-right: 1rem;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__profile {
+    flex: 0 0 15%;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    svg {
+      height: 3rem;
+      width: 3rem;
+      stroke: #730099;
+    }
+  }
+  &__profile-user {
+    height: 100%;
+    padding: 0 2rem;
+    display: flex;
+    font-size: 1.6rem;
+    align-items: center;
+    margin-right: auto;
+    &:hover,
+    &:active {
+      background-color: #f0eeee;
+    }
+  }
+  &__profile-img {
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  &__profile-icon {
+    display: flex;
+  }
+}
+/* Side Navigation */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: sticky;
+  top: 8rem;
+  width: auto;
+  overflow-y: auto;
+  &__lists {
+    list-style: none;
+    font-size: 1.6rem;
+    margin-top: 3.5rem;
+  }
+  &__list {
+    position: relative;
+    border-right: 0.4rem solid transparent;
+    margin-bottom: 1rem;
+    transition: all 0.3s;
+    &:hover,
+    &:active,
+    &--active {
+      background-color: #830000;
+      background-color: #e52a5a;
+      border-right: 0.4rem solid rgb(202, 253, 17);
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.75px;
+    color: #fff;
+    svg {
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-right: 2rem;
+    }
+    span {
+      transform: translateY(2.5px);
+    }
+  }
+}

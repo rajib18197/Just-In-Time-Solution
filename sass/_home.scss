@@ -1,0 +1,72 @@
+.content {
+  display: grid;
+  grid-template-columns: 18% 82%;
+}
+aside {
+  background-color: #101d26;
+}
+main {
+  margin-top: 8rem;
+}
+
+.categories {
+  padding: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #333;
+  span {
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .search-box {
+    margin-right: auto;
+  }
+  &__tag {
+    font-family: inherit;
+    font-size: 1.6rem;
+    border: 0.1rem solid #730099;
+    outline: none;
+    background: none;
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+  }
+}
+/********************************/
+/* All Questions (Home Page) */
+/********************************/
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  &:nth-child(odd) {
+    background-color: #f3d9fa;
+  }
+  &:nth-child(even) {
+    background-color: #fff0f6;
+  }
+  &__answer-count {
+    line-height: 1.4;
+    width: min-content;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: #101d36;
+    color: #fff;
+    text-align: center;
+  }
+  &__name {
+    font-family: "Work Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #830000;
+    text-transform: capitalize;
+  }
+  &__time,
+  &__user {
+    font-size: 1.6rem;
+  }
+}

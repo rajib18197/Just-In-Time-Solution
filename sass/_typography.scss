@@ -1,0 +1,39 @@
+.btn {
+  font-size: 1.6rem;
+  padding: 0.4rem 1rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: max-content;
+  transition: all 0.2s;
+  &--different {
+    background-color: #39b385;
+    // background-color: ;
+    color: #fff;
+    color: #222;
+    &:hover {
+      background-color: #27d190;
+    }
+  }
+}
+.heading-primary,
+.heading-secondary {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3rem;
+  padding: 2rem 4rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.heading-primary {
+  font-size: 3rem;
+}
+.heading-secondary {
+  font-size: 2rem;
+}
+.paragraph {
+  padding: 1rem 4rem 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  width: 70%;
+}

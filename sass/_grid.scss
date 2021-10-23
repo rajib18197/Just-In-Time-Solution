@@ -1,0 +1,85 @@
+/* Reusable Grid */
+::selection {
+  background-color: #e67700;
+  color: #fff;
+}
+.grid {
+  display: grid;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.search-box-name {
+  font-size: 1.4rem;
+  color: rgb(32, 10, 235);
+}
+.search {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    stroke: #666;
+    z-index: 2;
+    transform: translate(-1.2rem);
+  }
+  &__input {
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: inherit;
+    border: none;
+    border-radius: 10rem;
+    padding: 0.8rem 3.5rem;
+    width: 100%;
+    background-color: #f0eeee;
+    transition: all 0.6s;
+    margin-left: -4.25rem;
+    margin-right: 1rem;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+// Card Components
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.card {
+  padding: 2rem 1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  &__title {
+    font-family: "Work Sans", sans-serif;
+    width: max-content;
+    font-size: 1.6rem;
+    padding: 0.4rem 1rem;
+    text-transform: uppercase;
+    background-color: #ffc50c;
+    margin-bottom: 1rem;
+  }
+  &__description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  &__question-counts {
+    width: max-content;
+    font-size: 1.4rem;
+    padding: 0.4rem 1rem;
+    background-color: #ec407a;
+  }
+}
