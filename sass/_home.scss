@@ -6,7 +6,14 @@ aside {
   background-color: #101d26;
 }
 main {
+  display: none;
+  transform: scale(0);
+}
+main.main-content__active {
   margin-top: 8rem;
+  display: block;
+  transform: scale(1);
+  transition: transform 1s ease;
 }
 
 .categories {
@@ -46,7 +53,7 @@ main {
     background-color: #f3d9fa;
   }
   &:nth-child(even) {
-    background-color: #fff0f6;
+    background-color: #f6e8fa;
   }
   &__answer-count {
     line-height: 1.4;
@@ -59,7 +66,7 @@ main {
     text-align: center;
   }
   &__name {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
     font-weight: 700;
     color: #830000;
@@ -68,5 +75,149 @@ main {
   &__time,
   &__user {
     font-size: 1.6rem;
+  }
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #101d36;
+  color: #fff;
+  place-items: center;
+  gap: 2rem;
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__info {
+    justify-self: start;
+  }
+  &__name {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  &__join,
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+    span {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+  }
+  &__location {
+  }
+}
+.options {
+  margin-top: 4rem;
+  padding: 4rem;
+  &__tab-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  &__tab {
+    padding: 0.4rem 1rem;
+    background-color: #101d36;
+    color: #eee;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+  }
+  &__activity {
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+  }
+  &__answer,
+  &__question {
+    padding: 4rem;
+    background-color: #f3d9fa;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &--1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      padding: 1rem;
+      border-bottom: 0.2rem solid #888;
+      text-decoration: none;
+      color: rgb(51, 15, 211);
+    }
+    &--2 {
+      font-size: 1.6rem;
+      padding: 1rem;
+    }
+  }
+  &__question {
+    background-color: #fcc2d7;
+  }
+  //settings
+  &__settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //align-items: center;
+  }
+  &__photo {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+  &__img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+    &--new {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transform: translate(5%, 25%);
+      font-size: 1.4rem;
+      padding: 0.5rem 1rem;
+      background-color: #101d36;
+      color: #f9f9f9;
+      width: max-content;
+      cursor: pointer;
+    }
+  }
+}
+.form {
+  label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  input {
+    border: 0.1rem solid #888;
+    padding: 1rem;
+    background: #f9f9f9;
+    outline: none;
+    width: 60%;
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  input[type='button'],
+  input[type='reset'] {
+    display: inline-block;
+    width: max-content;
+    background-color: #730099;
+    color: #fff;
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
   }
 }

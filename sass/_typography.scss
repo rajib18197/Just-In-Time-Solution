@@ -8,18 +8,16 @@
   width: max-content;
   transition: all 0.2s;
   &--different {
-    background-color: #39b385;
-    // background-color: ;
+    background-color: #a61e4d;
     color: #fff;
-    color: #222;
     &:hover {
-      background-color: #27d190;
+      background-color: #c2255c;
     }
   }
 }
 .heading-primary,
 .heading-secondary {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 3rem;
   padding: 2rem 4rem 0;
   font-weight: 700;

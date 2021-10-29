@@ -71,11 +71,15 @@
         </div>
       </nav>
     </header>
+
     <div class="content">
       <aside>
         <nav class="side-nav">
           <ul class="side-nav__lists">
-            <li class="side-nav__list side-nav__list--active">
+            <li
+              class="side-nav__list side-nav__list--active side-nav__list-1"
+              data-tab="1"
+            >
               <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -94,8 +98,8 @@
                 <span>Home</span>
               </a>
             </li>
-            <li class="side-nav__list">
-              <a href="questions.html" class="side-nav__link">
+            <li class="side-nav__list side-nav__list-2" data-tab="2">
+              <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -113,8 +117,8 @@
                 <span>Questions</span></a
               >
             </li>
-            <li class="side-nav__list">
-              <a href="tag.html" class="side-nav__link">
+            <li class="side-nav__list side-nav__list-3" data-tab="3">
+              <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -132,8 +136,8 @@
                 <span>Tag</span>
               </a>
             </li>
-            <li class="side-nav__list">
-              <a href="#" class="side-nav__link">
+            <li class="side-nav__list side-nav__list-4">
+              <a href="user.html" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -154,7 +158,10 @@
           </ul>
         </nav>
       </aside>
-      <main>
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <!-- Main 01 home-->
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <main class="main-content main-content__active main-content--1">
         <h1 class="heading-primary">Top Questions</h1>
         <div class="categories">
           <button class="categories__tag">General</button>
@@ -215,6 +222,211 @@
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
+        </div>
+      </main>
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <!-- Main 02 questions-->
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <main class="main-content main-content--2">
+        <h1 class="heading-primary">All Questions</h1>
+
+        <div class="categories">
+          <span>2,21,000 Questions</span>
+          <button class="categories__tag">General</button>
+          <button class="categories__tag">Year</button>
+          <button class="categories__tag">Week</button>
+          <button class="categories__tag">Month</button>
+          <button class="categories__tag">Month</button>
+          <button class="categories__tag">Month</button>
+        </div>
+        <!-- question 01 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+        <!-- question 02 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+        <!-- question 03 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+        <!-- question 04 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+        <!-- question 05 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+        <!-- question 06 -->
+        <div class="question">
+          <div class="question__answer-count">0 answers</div>
+          <div class="question__name">
+            How does Prototypal inheritance works in JavaScript?
+          </div>
+          <div class="question__user">Steven Jones</div>
+          <div class="question__time">31/01/2021</div>
+        </div>
+      </main>
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <!-- Main 03 tags-->
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <main class="main-content main-content--3">
+        <h2 class="heading-secondary">Tags</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+          consequuntur quod ipsa, beatae iusto repellat numquam voluptatum
+          libero obcaecati similique.
+        </p>
+        <!-- Categories -->
+        <div class="categories">
+          <div class="search-box">
+            <p class="search-box-name">Show All Tag Synonyms</p>
+            <div class="search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+              <input
+                type="search"
+                name="search"
+                class="search__input"
+                placeholder="Filter by tag name.."
+              />
+            </div>
+          </div>
+          <button class="categories__tag">General</button>
+          <button class="categories__tag">Name</button>
+          <button class="categories__tag">Few</button>
+        </div>
+        <!-- Cards Compnents -->
+        <div class="cards">
+          <!-- card 01-->
+          <div class="card">
+            <h3 class="card__title">JavaScript</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 02-->
+          <div class="card">
+            <h3 class="card__title">Python</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 03-->
+          <div class="card">
+            <h3 class="card__title">Java</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 04-->
+          <div class="card">
+            <h3 class="card__title">Golang</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 05-->
+          <div class="card">
+            <h3 class="card__title">React JS</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 06-->
+          <div class="card">
+            <h3 class="card__title">C/C++</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 07-->
+          <div class="card">
+            <h3 class="card__title">PHP</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- card 08-->
+          <div class="card">
+            <h3 class="card__title">CSS</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
+          <!-- Card 09 -->
+          <div class="card">
+            <h3 class="card__title">Node JS</h3>
+            <p class="card__description">
+              Lorem ipsum dolor sit amet, consectetur beatae adipisicing.
+              Sapiente consequuntur quod ipsa, beatae iusto repellat numquam
+              voluptatum libero obcaecati similique.
+            </p>
+            <p class="card__question-counts">110 Questions</p>
+          </div>
         </div>
       </main>
     </div>

@@ -71,12 +71,16 @@
         </div>
       </nav>
     </header>
+
     <div class="content">
       <aside>
         <nav class="side-nav">
           <ul class="side-nav__lists">
-            <li class="side-nav__list">
-              <a href="index.html" class="side-nav__link">
+            <li
+              class="side-nav__list side-nav__list--active side-nav__list-1"
+              data-tab="1"
+            >
+              <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -94,8 +98,8 @@
                 <span>Home</span>
               </a>
             </li>
-            <li class="side-nav__list">
-              <a href="#" class="side-nav__link side-nav__list--active">
+            <li class="side-nav__list side-nav__list-2" data-tab="2">
+              <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -113,8 +117,8 @@
                 <span>Questions</span></a
               >
             </li>
-            <li class="side-nav__list">
-              <a href="tag.html" class="side-nav__link">
+            <li class="side-nav__list side-nav__list-3" data-tab="3">
+              <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-6 w-6"
@@ -132,7 +136,7 @@
                 <span>Tag</span>
               </a>
             </li>
-            <li class="side-nav__list">
+            <li class="side-nav__list side-nav__list-4">
               <a href="#" class="side-nav__link">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -154,71 +158,88 @@
           </ul>
         </nav>
       </aside>
-      <main>
-        <h1 class="heading-primary">All Questions</h1>
-
-        <div class="categories">
-          <span>2,21,000 Questions</span>
-          <button class="categories__tag">General</button>
-          <button class="categories__tag">Year</button>
-          <button class="categories__tag">Week</button>
-          <button class="categories__tag">Month</button>
-          <button class="categories__tag">Month</button>
-          <button class="categories__tag">Month</button>
-        </div>
-        <!-- question 01 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+      <!-- main -->
+      <main class="main-content__active">
+        <figure class="user">
+          <img src="img/user-photo-1.jpg" alt="" class="user__img" />
+          <figcaption class="user__info">
+            <p class="user__name">Steven Adam</p>
+            <p class="user__join">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span> Member For 1 Years </span>
+            </p>
+            <p class="user__location">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span>Canada</span>
+            </p>
+          </figcaption>
+        </figure>
+        <!-- profile-->
+        <div class="options">
+          <div class="options__tab-container">
+            <button class="options__tab options__tab--1 options__tab--active">
+              Profile Activity
+            </button>
+            <button class="options__tab options__tab--2">Setting</button>
           </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
-        </div>
-        <!-- question 02 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+          <!-- activity-->
+          <div
+            class="
+              options__activity options__content--1 options__content--active
+            "
+          >
+            <p class="options__answer">
+              <a href="#" class="options__answer--1"> Answer (0) </a>
+              <span class="options__answer--2"
+                >You have not answered any question yet.</span
+              >
+            </p>
+            <p class="options__question">
+              <a href="#" class="options__question--1"> Question (0) </a>
+              <span class="options__question--2"
+                >You have not asked any question Yet</span
+              >
+            </p>
           </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
-        </div>
-        <!-- question 03 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+          <!-- settings-->
+          <div class="options__settings option__content--1">
+            <figure class="options__photo">
+              <img src="img/user-photo-1.jpg" alt="" class="options__img" />
+              <figcaption class="options__img--new">
+                Change Profile Picture
+              </figcaption>
+            </figure>
+            <form action="" class="form">
+              <label for="name">Display Name</label>
+              <input type="text" id="name" />
+              <label for="password">New Password</label>
+              <input type="text" id="password" />
+              <input type="button" value="Save Profile" />
+              <input type="reset" value="Cancel" />
+            </form>
           </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
-        </div>
-        <!-- question 04 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
-          </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
-        </div>
-        <!-- question 05 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
-          </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
-        </div>
-        <!-- question 06 -->
-        <div class="question">
-          <div class="question__answer-count">0 answers</div>
-          <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
-          </div>
-          <div class="question__user">Steven Jones</div>
-          <div class="question__time">31/01/2021</div>
         </div>
       </main>
     </div>

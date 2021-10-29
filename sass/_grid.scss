@@ -56,30 +56,50 @@
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
   padding: 2rem;
+  background-color: #eeeded;
 }
 .card {
+  display: flex;
+  flex-direction: column;
   padding: 2rem 1rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0 10px 6px -6px #777;
+  background-color: #ffffff;
+  color: #f9f9f9;
+  outline: 0.2rem solid transparent;
+  transition: all 0.3s;
+  &:hover {
+    outline: 0.2rem solid #101d36;
+    outline-offset: 0.6rem;
+  }
   &__title {
-    font-family: "Work Sans", sans-serif;
+    font-family: 'Work Sans', sans-serif;
     width: max-content;
     font-size: 1.6rem;
+    font-weight: 500;
     padding: 0.4rem 1rem;
     text-transform: uppercase;
-    background-color: #ffc50c;
+    background-color: #101d36;
     margin-bottom: 1rem;
+    cursor: pointer;
   }
   &__description {
     font-size: 1.4rem;
     line-height: 1.6;
     margin-bottom: 1rem;
+    color: #444;
   }
   &__question-counts {
     width: max-content;
     font-size: 1.4rem;
-    padding: 0.4rem 1rem;
+    padding: 0.1rem 1rem;
+    align-self: flex-end;
     background-color: #ec407a;
+    background-color: #9d174d;
+    border-radius: 3rem;
   }
 }
