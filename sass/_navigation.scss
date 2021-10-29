@@ -14,7 +14,7 @@
   box-shadow: 0 0rem 2rem rgba(29, 29, 29, 0.2);
   &__logo {
     &--link {
-      font-family: "Work Sans", sans-serif;
+      font-family: 'Work Sans', sans-serif;
       font-size: 1.9rem;
       font-weight: 500;
       text-transform: uppercase;
@@ -94,6 +94,7 @@
   position: sticky;
   top: 8rem;
   width: auto;
+  // height: 100vh;
   overflow-y: auto;
   &__lists {
     list-style: none;
