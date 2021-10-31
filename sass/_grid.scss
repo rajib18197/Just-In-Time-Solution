@@ -70,11 +70,11 @@
   box-shadow: 0 10px 6px -6px #777;
   background-color: #ffffff;
   color: #f9f9f9;
-  outline: 0.2rem solid transparent;
+  outline: 0.4rem solid transparent;
   transition: all 0.3s;
   &:hover {
-    outline: 0.2rem solid #101d36;
-    outline-offset: 0.6rem;
+    outline: 0.4rem solid #101d36;
+    //outline-offset: 0.6rem;
   }
   &__title {
     font-family: 'Work Sans', sans-serif;

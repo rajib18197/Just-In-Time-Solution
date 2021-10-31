@@ -1,0 +1,17 @@
+.ratings {
+  padding: 0 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -0.5rem;
+  line-height: 1.4;
+  background-color: #eb2f64;
+  &__rate {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  &__vote {
+    font-size: 1.4rem;
+  }
+}

@@ -59,11 +59,16 @@ const overlay = document.querySelector('.overlay');
 const btnClose = document.querySelector('.btn--close-modal');
 const askQuestion = document.querySelector('.btn');
 
-const openModal = function () {
+const openModal = function (e) {
+  e.preventDefault();
+  //modal.classList.add('show-modal');
+  //overlay.classList.add('open-overlay');
   modal.classList.remove('hidden');
   overlay.classList.remove('hidden');
 };
 const closeModal = function () {
+  //modal.classList.remove('show-modal');
+  //overlay.classList.remove('open-overlay');
   modal.classList.add('hidden');
   overlay.classList.add('hidden');
 };
@@ -72,6 +77,9 @@ btnClose.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
 document.addEventListener('keydown', function (e) {
+  // if (e.key === 'Escape' && modal.classList.contains('show-modal')) {
+  //   closeModal();
+  // }
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }

@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   // height: 100%;
-  z-index: 1000;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -103,7 +103,7 @@
   }
   &__list {
     position: relative;
-    border-right: 0.4rem solid transparent;
+    border-left: 0.4rem solid transparent;
     margin-bottom: 1rem;
     transition: all 0.3s;
     &:hover,
@@ -111,7 +111,7 @@
     &--active {
       background-color: #830000;
       background-color: #e52a5a;
-      border-right: 0.4rem solid rgb(202, 253, 17);
+      border-left: 0.4rem solid rgb(202, 253, 17);
     }
   }
   &__link:link,
