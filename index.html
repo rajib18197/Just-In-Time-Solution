@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+    <!-- Header Navigation-->
+    <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
     <header>
       <nav class="navigation">
         <div class="navigation__logo">
@@ -42,6 +45,7 @@
             placeholder="Search.."
           />
           <button class="btn btn--different">Ask Question</button>
+          <button class="btn btn--different sign-in">Sign In</button>
         </form>
         <div class="navigation__profile" data-tab="1">
           <div class="navigation__profile-user">
@@ -72,7 +76,13 @@
       </nav>
     </header>
 
+    <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+    <!-- Main Content -->
+    <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
     <div class="content">
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
+      <!-- Side Navigation-->
+      <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
       <aside>
         <nav class="side-nav">
           <ul class="side-nav__lists">
@@ -136,30 +146,11 @@
                 <span>Tag</span>
               </a>
             </li>
-            <!-- <li class="side-nav__list side-nav__list-4">
-              <a href="user.html" class="side-nav__link">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                  />
-                </svg>
-                <span>User</span>
-              </a>
-            </li> -->
           </ul>
         </nav>
       </aside>
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
-      <!-- Main 01 home-->
+      <!-- Main 01 home (Top Questions)-->
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
       <main class="main-content main-content__active main-content--1">
         <div class="main-header">
@@ -173,7 +164,7 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
@@ -182,7 +173,7 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
@@ -191,7 +182,7 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
@@ -200,7 +191,7 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
@@ -209,7 +200,7 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
@@ -218,14 +209,14 @@
         <div class="question">
           <div class="question__answer-count">0 answers</div>
           <div class="question__name">
-            How does Prototypal inheritance works in JavaScript?
+            <a href="#">How does Prototypal inheritance works in JavaScript?</a>
           </div>
           <div class="question__user">Steven Jones</div>
           <div class="question__time">31/01/2021</div>
         </div>
       </main>
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
-      <!-- Main 02 questions-->
+      <!-- Main 02 (All questions)-->
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
       <main class="main-content main-content--2">
         <div class="main-header">
@@ -288,7 +279,7 @@
         </div>
       </main>
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
-      <!-- Main 03 tags-->
+      <!-- Main 03 (Tags)-->
       <!--*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*---->
       <main class="main-content main-content--3">
         <h2 class="heading-secondary">Tags</h2>
@@ -419,7 +410,7 @@
           </div>
         </div>
       </main>
-      <!-- main -->
+      <!-- User Profile -->
       <main class="main-content main-content--4">
         <figure class="user">
           <img src="img/user-photo-1.jpg" alt="" class="user__img" />
@@ -502,9 +493,9 @@
             </figure>
             <form action="" class="form">
               <label for="name">Display Name</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" class="form__display" />
               <label for="password">New Password</label>
-              <input type="password" id="password" />
+              <input type="password" id="password" class="form__display" />
               <input type="button" value="Save Profile" />
               <input type="reset" value="Cancel" />
             </form>
@@ -512,7 +503,86 @@
         </div>
       </main>
     </div>
-    <!-- Contact form -->
+
+    <!--+-+-+-+-+-+-+--+-+-+-+-+-+-+-+-+-
+    <!-- Booking/Login Page Section -->
+    <!--+-+-+-+-+-+-+-++-+-+-+-+-+-+-+--->
+    <section class="section-book">
+      <div class="row">
+        <div class="book">
+          <div class="book__form">
+            <form action="#" class="form">
+              <!-- Heading secondary for All section title -->
+              <div class="u-margin-bottom-large">
+                <h2 class="heading-tertiary">Register Now</h2>
+              </div>
+              <div class="form__group">
+                <input
+                  type="text"
+                  name="fullName"
+                  id="fullname"
+                  class="form__input"
+                  placeholder="Full Name"
+                />
+                <label for="fullname" class="form__label">Full Name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__input"
+                  placeholder="Email Address"
+                />
+                <label for="email" class="form__label">Email</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  name="email"
+                  id="pass"
+                  class="form__input"
+                  placeholder="password"
+                />
+                <label for="pass" class="form__label">Password</label>
+              </div>
+
+              <div class="form__group">
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="quantity"
+                    id="manage"
+                    class="form__radio-input"
+                  />
+                  <label for="manage" class="form__radio-label">
+                    <span class="form__radio-button">&nbsp;</span>
+                    Student
+                  </label>
+                </div>
+                <div class="form__radio-group">
+                  <input
+                    type="radio"
+                    name="quantity"
+                    id="manage2"
+                    class="form__radio-input"
+                  />
+                  <label for="manage2" class="form__radio-label">
+                    <span class="form__radio-button">&nbsp;</span>
+                    Teacher
+                  </label>
+                </div>
+              </div>
+              <a href="#" class="btn-tertiary">Sign In</a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- 
+      <!-- Modal Window for Asked Questions  -->
+    <!--+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+--->
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
       <h2 class="modal__header">Ask a Questions</h2>
@@ -521,12 +591,23 @@
         <input type="text" class="modal__form-input" id="first-name" />
         <label for="last-name" class="modal__form-label">Question</label>
         <textarea name="" id="" cols="30" rows="10"></textarea>
-        <label for="email" class="modal__form-label">Categories</label>
-        <input type="text" class="modal__form-input" id="email" />
+        <label for="tag" class="modal__form-label">Categories</label>
+        <select name="" id="tag">
+          <option value="golang">Golang</option>
+          <option value="C/C++">C/C++</option>
+          <option value="Javascript">JavaScript</option>
+          <option value="Node Js">Node JS</option>
+          <option value="Python">python</option>
+          <option value="React JS">React JS</option>
+          <option value="Java">Java</option>
+          <option value="php">PHP</option>
+          <option value="css">CSS</option>
+        </select>
         <button>Submit &rarr;</button>
       </form>
     </div>
     <div class="overlay hidden"></div>
+
     <script src="js/script.js"></script>
   </body>
 </html>

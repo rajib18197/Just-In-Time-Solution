@@ -10,8 +10,13 @@ html {
 }
 body {
   // font-family: "Work Sans", sans-serif;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   box-sizing: border-box;
   color: #444;
   line-height: 1.8;
+}
+
+::selection {
+  background-color: #e67700;
+  color: #fff;
 }

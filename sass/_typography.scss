@@ -1,3 +1,6 @@
+/***************************************************/
+/* Button Asked questions from header navigation */
+/***************************************************/
 .btn {
   font-size: 1.6rem;
   padding: 0.4rem 1rem;
@@ -7,6 +10,9 @@
   cursor: pointer;
   width: max-content;
   transition: all 0.2s;
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
   &--different {
     background-color: #a61e4d;
     color: #fff;
@@ -15,6 +21,10 @@
     }
   }
 }
+
+/********************************/
+/* Heading & Paragraph */
+/********************************/
 .heading-primary,
 .heading-secondary {
   font-family: sans-serif;
@@ -29,9 +39,37 @@
 .heading-secondary {
   font-size: 2rem;
 }
+.heading-tertiary {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #a61e4d;
+}
 .paragraph {
   padding: 1rem 2rem 0;
   font-size: 1.6rem;
   line-height: 1.4;
   width: 70%;
+}
+
+/********************************/
+/* Ratings [Home page] */
+/********************************/
+.ratings {
+  padding: 0 2.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -0.5rem;
+  line-height: 1.4;
+  background-color: #eb2f64;
+  &__rate {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  &__vote {
+    font-size: 1.4rem;
+  }
 }

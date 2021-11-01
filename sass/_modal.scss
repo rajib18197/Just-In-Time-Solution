@@ -1,0 +1,108 @@
+/*************************************/
+/* Modal Window For Asked Question */
+/*************************************/
+.modal {
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  max-width: 100%;
+  width: 80%;
+  padding: 2rem 4rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+  &__header {
+    font-size: 3.25rem;
+    line-height: 1.5;
+    margin-bottom: 4.5rem;
+    margin-left: 2rem;
+  }
+  &__form {
+    margin: 0 2rem;
+    label {
+      font-size: 1.7rem;
+      font-weight: 500;
+      display: block;
+    }
+    input {
+      width: 100%;
+      font-size: 1.8rem;
+      padding: 1rem 1.5rem;
+      border: 0.1rem solid #ddd;
+      border-radius: 0.3rem;
+      outline: none;
+    }
+    textarea {
+      width: 100%;
+      border: 0.1rem solid #ddd;
+      resize: none;
+      outline: none;
+      padding: 1rem 1.5rem;
+    }
+    select {
+      margin-top: 0.5rem;
+      padding: 1rem 2rem;
+      border: 0.2rem solid #101d26;
+      font-size: 1.4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    button {
+      display: block;
+      margin-top: 4rem;
+      font-size: 1.6rem;
+      padding: 1.3rem 4rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+      background-color: #730039;
+      color: #fff;
+    }
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  line-height: 1.2;
+  border: none;
+  background: none;
+  font-size: 4.6rem;
+  cursor: pointer;
+}
+.modal.hidden {
+  transform: translate(-50%, -50%) scale(0.2);
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/********************************/
+/* Utilites/Helper Classes */
+/********************************/
+.u-margin-bottom-large {
+  margin-bottom: 2rem;
+}
+.row {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
