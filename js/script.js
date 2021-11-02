@@ -81,8 +81,15 @@ document.addEventListener('keydown', function (e) {
   }
 });
 // for testing login form
+const signIn = document.querySelector('.section-book');
 const btnSign = document.querySelector('.sign-in');
+const btnCloseSignin = document.querySelector('.btn--close-signin');
+
+const closeSignin = function () {
+  signIn.classList.remove('sign-in-form');
+};
 btnSign.addEventListener('click', function (e) {
   e.preventDefault();
   document.querySelector('.section-book').classList.add('sign-in-form');
 });
+btnCloseSignin.addEventListener('click', closeSignin);

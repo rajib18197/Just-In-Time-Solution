@@ -21,7 +21,8 @@
 
 .question {
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
+  gap: 2rem;
   align-items: center;
   padding: 2rem;
   &:nth-child(odd) {
@@ -42,9 +43,11 @@
   }
   &__name {
     font-family: 'Work Sans', sans-serif;
+    justify-self: flex-start;
     font-size: 2rem;
     font-weight: 700;
     text-transform: capitalize;
+    margin-right: auto;
     a {
       text-decoration: none;
       color: #020083;
